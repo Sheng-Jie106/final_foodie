@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>湯麵類</title>
+		<script>
+			function to2(){
+				document.getElementById("page1").style.display="none";
+				document.getElementById("page2").style.display="table";
+			}
+		</script>
+		<style>
+		@import url(assert/css/common.css);
+		@import url(assert/css/classification.css);
+			main.noodle_2{
+			}
+		</style>
+	</head>
+	<body>
+		<main class=noodle_2>
+			<h3>湯麵</h3>
+			<div class=page>
+				<a href=noodle_2.html target="main"><span class=btn>1</span></a>
+				<span class=btn onclick="to2()">2</span>
+			</div>
+			<table id=page1>
+				<tr>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/24.jpg>
+						<figure><p>滿漢大餐<br>$39</p></figure>
+						</figcaption></a>
+					</td>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/25.jpg>
+						<figure><p>來一客<br>$25</p></figure>
+						</figcaption></a>
+					</td>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/26.jpg>
+						<figure><p>雙響砲<br>$30</p></figure>
+						</figcaption></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/27.jpg>
+						<figure><p>日清杯麵<br>$25</p></figure>
+						</figcaption></a>
+					</td>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/28.jpg>
+						<figure><p>花雕雞麵<br>$39</p></figure>
+						</figcaption>
+					</td>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/29.jpg>
+						<figure><p>一度讚<br>$39</p></figure>
+						</figcaption></a>
+					</td>
+				</tr>
+			</table>
+			<table id=page2 style="display: none;">
+				<tr>
+					<td>
+						<a href=detail.html target="main"><figcaption>
+						<img src=assert/img/product/30.jpg>
+						<figure><p>統一肉燥麵<br>$15</p></figure>
+						</figcaption></a>
+					</td>
+				</tr>
+			</table>
+		</main>
+	</body>
+</html>

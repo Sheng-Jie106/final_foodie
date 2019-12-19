@@ -1,0 +1,19 @@
+figcaption:hover img{
+}
+figcaption:hover figure{
+background-color: #ff1313;
+border-radius: 10px;
+color:white;
+margin:0;
+}
+figcaption{
+	border-radius: 10px;
+	margin:0 10px;
+}
+figure{
+text-align: center;
+transition: 0.5s;
+background: #ffb613;
+    color: #ffffff;
+    border-radius: 10px;
+}

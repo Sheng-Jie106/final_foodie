@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改資料</title>
+	<script src="assert/js/reset.js" type="text/javascript" charset="utf-8" async defer></script>
+	<style type="text/css" media="screen">
+	@import url("assert/css/common.css");
+			main{
+				width: 800px;
+				margin: 90px auto;
+			}
+			div img{
+				width: 300px;
+				height: 300px;
+				margin-right: 30px;
+				border-radius: 20px;
+    			border: 2px solid;
+			}
+			div.pur_reco{
+				margin:50px auto;
+			}
+			div.self_data{
+				display: flex;
+			}
+			div>div{
+				line-height: 35px;
+			}
+			input,textarea{
+				display: none;
+				margin: 0 auto;
+				line-height: 20px;
+				border-radius: 10px;
+    			line-height: 20px;
+    			transition: 0.5s;
+			}
+			input,textarea:hover{
+				box-shadow: 0 0 5px #77aae7;
+			}
+			input.re,button{
+				padding: 5px 10px;
+			    font-size: 20px;
+			    margin: 0 auto;
+			    border: 2px outset;
+			    background: #ff9a43;
+			    border-radius: 10px;
+			}
+			input.re,button:hover{
+				cursor: pointer;
+			}
+			button:active{
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class=self_data><!-- 個人資料 -->
+				<img src=assert/svg/part.svg>
+					<div>
+						<button onclick="password()">修改</button>&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼 : abc123456<br>
+						<input id=password type=text name=name><br>
+						<button onclick="name1()">修改</button>&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : 吳銘仁<br>
+						<input id=name type=text name=name><br>
+						<!-- <button onclick="sex()">修改</button>&nbsp;&nbsp;性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;別 : 未知<br>
+						<span class=radio id=sex>男 <input type=radio style="display:block;" value=male name=sex> 
+						女 <input style="display:block;" type=radio value=female name=sex></span><br> -->
+						<button onclick="phone()">修改</button>&nbsp;&nbsp;電&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;話 : 0913254895<br>
+						<input id=phone type=text name=phone><br>
+						<button onclick="mail()">修改</button>&nbsp;&nbsp;電子郵件 : cycu@gmail.com<br>
+						<input id=mail type=text name=mail><br>
+						<button onclick="locate()">修改</button>&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 : 桃園市中壢區新中北路200號<br>
+						 <textarea id=locate cols=21 name=locate style="position: relative;top:5px;"></textarea><p>
+						 <input class=re style="display:block;" type=submit method=post action="" value="更改資料">
+					</div>
+			</div>
+		</main>
+	</body>
+</html>

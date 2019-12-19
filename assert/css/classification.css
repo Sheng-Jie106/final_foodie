@@ -1,0 +1,55 @@
+figcaption img{
+margin: 0 50px;
+height: 250px;
+opacity:0.7;
+transition: 0.5s;
+}
+.noodle_1 h4,.noodle_2 h4{
+margin:1.33em 100px;
+}
+.noodle_1 h3,.noodle_2 h3{
+text-align: center;
+}
+figcaption:hover{
+box-shadow: 0 0 10px grey;
+}
+figcaption:hover img{
+height:280px;
+opacity:1;
+}
+figcaption:hover figure{
+background-color: orange;
+border-radius: 10px;
+color:white;
+margin:0;
+}
+figcaption{
+	border-radius: 10px;
+	box-shadow: 0 0 1px;
+	margin:0 10px;
+}
+figure{
+text-align: center;
+transition: 0.5s;
+background: #ffb613;
+    color: #ffffff;
+    border-radius: 10px;
+}
+table{
+margin: 20px auto;
+}
+div.page{
+	text-align: center;
+}
+span.btn{
+	margin: 10px;
+    padding: 5px 15px;
+    background-color: orange;
+	color:white;
+	transition: 0.5s;
+}
+span.btn:hover{
+	cursor:pointer;
+	background-color:white;
+	color:black;
+}

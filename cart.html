@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>購物車</title>
+		<style type="text/css" media="screen">
+		@import url(assert/css/common.css);
+			div.list{
+				display: flex;
+				background-color:  #d8d8d8;
+    			color: #a54545;
+				margin:20px auto;
+			}
+			div.cart{
+				width: 1200px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			main{
+				text-align: center;
+			}
+			img{
+				width: 100px;
+			}
+			div.list span{
+				margin: 0 10px;
+				padding: 5px 10px;
+				flex: auto;
+    			text-align: center;
+			}
+			div.product{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			div.product span{
+				flex:auto;
+				text-align: center;
+			}
+			img.del{
+				width: 33px;
+			}
+			img.del:hover{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class=cart>
+				<div class=list>
+					<span>NO.</span>
+					<span>商品圖</span>
+					<span>商品名</span>
+					<span>數量</span>
+					<span>價格</span>
+					<span>選取</span>
+					<span>移除</span>
+				</div>
+				<div class="product">
+					<span>1</span>
+					<span><img src=assert/img/product/01.jpg></span>
+					<span>卡迪那</span>
+					<span>2</span>
+					<span>30$</span>
+					<span><input type=checkbox name=check1></span>
+					<span><img class=del src=assert/img/delete.png></span>
+				</div>
+			</div>
+			<a href=settle.html><input class=but type=submit value=結帳去></a>
+		</main>
+	</body>
+</html>

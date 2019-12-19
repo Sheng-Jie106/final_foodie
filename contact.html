@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>實體店面</title>
+		<style type="text/css" media="screen">
+			@import url(assert/css/common.css);
+			main{
+				overflow: hidden;
+			}
+			article{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			section{
+				margin:30px;
+			}
+			span{
+				color:blue;
+			}
+			span:hover{
+				color:red;
+				cursor: pointer;
+			}
+			h1{
+					text-align: center;
+			}
+			img.shop{
+				border-style: groove;
+			}
+			aside{
+				width: 100%;
+				height:830px;
+				display: none;
+				background-color: #00000075;
+				position: absolute;top:0;
+				z-index: 2;
+				text-align: center;
+			}
+			iframe{
+				width: 65%;
+			    height: 600px;
+			    margin-top:30px;
+			    border-radius: 5px;
+			}
+			span.btn{
+				margin: 20px;
+				padding: 5px 15px;
+				background-color: orange;
+				color:white;
+				position: fixed;
+				right:15px;top:15px;
+				z-index: 5;
+				transition: 0.5s;
+			}
+			span.btn:hover{
+				cursor:pointer;
+				background-color:white;
+				color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>FOODIE GO</h1>
+			<article>
+				<section>
+					<img class=shop src=assert/img/cycu.jpg>
+				</section>
+				<section>
+					<h4>營業時間 : 週一~週五 9 : 00~17 : 00</h4>
+					<h4>連絡電話 : 032659999</h4>
+					<h4>Email : cycu@gmail.com</h4>
+					<h4>地址 : 桃園市中壢區中北路200號</h4>
+					<h4><span onclick="map()">查看地圖</span></h4>
+				</section>
+			</article>
+			<aside id=aside>
+				<span class=btn onclick="closemap()">X</span>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2519299423266!2d121.2388274508121!3d24.95754184742719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1576344404464!5m2!1szh-TW!2stw" ></iframe>
+			</aside>
+		</main>
+		<script type="text/javascript">
+			function map(){
+				document.getElementById("aside").style.display="block";
+			}
+			function closemap(){
+				document.getElementById("aside").style.display="none";
+			}
+		</script>
+	</body>
+</html>

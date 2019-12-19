@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品店</title>
+		<script type="text/javascript">
+		</script>
+		<style>
+		@import url(assert/css/common.css);
+		@import url(assert/css/top.css);
+		@import url(assert/css/sideshow.css);
+		@import url(assert/css/navbar.css);
+			body{
+				background-image: url(assert/img/bg.png);
+			}
+			header{background-image: linear-gradient(to right ,#fb5f5f,#ffaa2d);
+			}
+			main{
+				width:1260px;
+				margin:20px auto;
+			}
+			nav{
+				background-color: lightyellow;
+			}
+			article{
+				height: 695px;
+				background-color: white;
+			}
+			iframe{
+				width: 100%;
+				height: 850px;
+				background-color: #ffffffe0;b
+				border:none;
+			}
+			footer{
+				background-color: #312f2ff2;
+				color:white;	
+				text-align: center;
+				padding: 10px;
+			}
+			div.search{
+				position:relative;
+				display: flex;
+				align-items: center;
+    			justify-content: flex-end;
+    			background-image: linear-gradient(to right ,#fb5f5f,#ffaa2d);
+			}
+			div.search span,div{flex:none;}
+			div.search div{
+				background-color: white;
+			    margin: 10px;
+			    border-radius: 20px;
+    			box-shadow: 0 0 10px white;
+				}
+			div.search input{
+				border:0;
+				width: 250px;
+				margin-left: 7px;
+				line-height: 30px;
+				border-radius: 10px;
+			}
+			div.search button{
+				margin-right: 15px;
+			    border: 3px outset;
+			    border-radius: 10px;
+			    padding: 5px;
+			    background-color: #d6efff;
+			}
+			div.search button:hover{cursor: pointer;}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class=logo><p>FOODIE GO</p></div>
+			<header>
+				<div>
+					<div>
+						<div class="imgs fade">
+							<div class=pages>1 / 3</div>
+							<img src="assert/img/b3.jpg" style="width:100%;height: 600px">
+						</div>
+						<div class="imgs fade">
+							<div class=pages>2 / 3</div>
+							<img src="assert/img/b1.jpg" style="width:100%;height: 600px">
+						</div>
+						<div class="imgs fade">
+							<div class=pages>3 / 3</div>
+							<img src="assert/img/b2.jpg" style="width:100%;height: 600px;">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+					<div style="text-align:center;opsition:relative;">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span style="position:absolute;left:20px;">2020/01/01</span>
+						<span style="position:absolute;left:150px;">您是第1位訪客</span>
+					</div>
+				</div>
+			</header>
+			<script src=assert/js/sideshow.js></script>
+			</header>
+			<div class=search>
+				<span style="position:absolute;left:20px;visibility:hidden;">科友宜你好</span>
+				<span style="font-weight: bold;">商品搜尋</span>
+				<div>
+					<input type=text name=search>
+					<button onclick="();">搜尋</button>
+				</div>
+			</div>
+			<nav>
+				<ul class=navbar>
+			        <li><a href=default.html target="main">首頁</a>
+			        </li>
+			        <li><a>會員中心</a>
+			            <ul>
+			                <li><a href=login.html target=main>登入</a>
+			                </li>
+			                <li><a href="register.html" target=main>註冊</a>
+			                </li>
+			                <li><a href=self_data.html target="main">個人資訊</a>
+			                </li>
+			                <li><a href="reset.html" target="main">修改資料</a>
+			                </li>
+			            </ul>
+			        </li>
+			        <li><a>商品</a>
+			        	<ul>
+					        <li><a href=cookies.html target="main">台式童年餅乾</a>
+					        	<ul>
+					                <li><a href="cookie_1.html" target="main">鹹味餅乾</a></li>
+					                <li><a href="cookie_2.html" target="main">甜類餅乾</a>
+					            </ul>
+					        </li>
+					        <li><a href=candys.html target="main">熱門甜食</a>
+					        	<ul>
+					                <li><a href="candy_1.html" target="main">軟糖</a></li>
+					                <li><a href="candy_2.html" target="main">巧克力</a>
+					            </ul>
+					        </li>
+					        <li><a href=noodles.html target="main">流行泡麵</a>
+					        	<ul>
+					                <li><a href=noodle_1.html target="main">乾麵</a></li>
+					                <li><a href=noodle_2.html target="main">湯麵</a>
+					            </ul>
+					        </li>
+					    </ul>
+			        </li>
+			        <li><a href="cart.html" target="main">購物車</a>
+			        </li>
+			        <li><a>關於我們</a>
+			        	<ul>
+			                <li><a href="contact.html" target="main">聯絡我們</a></li>
+			                <li><a href="OurTeam.html" target="main">我們的團隊</a></li>
+			            </ul>
+			        </li>
+			    </ul>
+			</nav>
+			<aside>
+				
+			</aside>
+				<iframe name=main src=default.html>
+				</iframe>
+			<footer>
+			版權所有:©王聖杰_Wang-Sheng-jie ©劉光嚴<sub>&nbsp;&nbsp;&nbsp;&nbsp;2019/12/15</sub>
+			</footer>
+		</main>
+	</body>
+</html>

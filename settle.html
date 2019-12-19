@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>結帳</title>
+		<style type="text/css" media="screen">
+		@import url(assert/css/common.css);
+			div.list{
+				display: flex;
+				background-color:  #d8d8d8;
+    			color: #a54545;
+				margin:20px auto;
+			}
+			div.cart{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			img{
+				width: 100px;
+			}
+			div.list span{
+				margin: 0 10px;
+				padding: 5px 10px;
+				flex: auto;
+    			text-align: center;
+			}
+			div.product{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			div.product span{
+				flex:auto;
+				text-align: center;
+			}
+			div.settle{
+				width: 400px;
+    			margin: 20px auto;
+    			line-height: 50px;
+			}
+			img.del{
+				width: 33px;
+			}
+			img.del:hover{
+				cursor: pointer;
+			}
+			hr{width: 100%;}
+			textarea{
+				border-radius: 10px;
+				line-height: 20px;
+				transition: 0.5s;
+			}
+			textarea:hover{
+				box-shadow: 0 0 5px #77aae7;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class=cart>
+				<div class=list>
+					<span>NO.</span>
+					<span>商品圖</span>
+					<span>商品名</span>
+					<span>數量</span>
+					<span>單價</span>
+					<span>總價</span>
+				</div>
+				<div class="product">
+					<span>1</span>
+					<span><img src=assert/img/product/01.jpg></span>
+					<span>卡迪那</span>
+					<span id=amount>2</span>
+					<span id=price>30</span>
+					<span id=prices>60</span>
+				</div>
+			</div>
+			<hr>
+			<div class=settle>
+				總金額 : <strong id=pricess></strong><br>
+				付款方式 : <br>
+				<select>
+					<option value="">ATM付款 </option>
+					<option value="">貨到付款 </option>
+					<option value="">信用卡 </option>
+				</select><br>
+				郵寄地址 : <br>
+				<textarea cols=50 rows=3 name=location></textarea>
+				<div style="text-align: center;"><input class=but type=submit value=確認付款></div>
+			</div>
+		</main>
+	</body>
+</html>

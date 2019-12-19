@@ -1,0 +1,19 @@
+div.logo{
+background-color: orange;
+}
+div.logo p{
+text-align: center;
+font-size: 36px;
+padding: 10px;
+margin: 0;
+}
+nav span{
+display: flex;
+margin:0 auto;
+}
+nav span a{
+flex:auto;
+text-decoration: none;
+margin: 10px;
+text-align: center;
+}

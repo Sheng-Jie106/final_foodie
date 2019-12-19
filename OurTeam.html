@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>我們的團隊</title>
+		<script>
+			function to2(){
+				document.getElementById("page1").style.display="none";
+				document.getElementById("page2").style.display="block";
+			}
+		</script>
+		<style>
+		@import url(assert/css/common.css);
+		@import url(assert/css/classification.css);
+			article,section{
+				display: flex;
+				justify-content: center;
+				margin:50px;
+			}
+			img.portrait,aside{
+				
+			}
+			hr{width: 53%}
+			img.portrait{
+				width:300px;
+				margin:0 50px;
+				border-style: groove;  
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class=page style="margin:20px 0">
+				<a href=OurTeam.html target="main"><span class=btn>1</span></a>
+				<span class=btn onclick="to2()">2</span>
+			</div>
+			<div id=page1>
+				<article>
+					<img class=portrait src=assert/img/bike.jpg>
+					<aside>
+						<p>姓名 : 王聖杰<br>
+						系級 : 心理三甲<br>
+						分工 : 網頁前端設計美化<p>
+						從學期初甚麼都不會，經過了這學期的努力，<br>成長了許多，也從中得到了許多成就感。
+						</p>
+					</aside>
+				</article>
+				<hr>
+				<section>
+					<aside>
+						<p>姓名 : 劉光嚴<br>
+						系級 : 資管二甲<br>
+						分工 : 網頁前端設計美化<p>
+						<br>
+						</p>
+					</aside>
+					<img class=portrait src=assert/svg/part.svg>
+				</section>
+				<hr>
+			</div>
+			<div id=page2 style="display: none">
+				<article>
+					<img class=portrait src=assert/svg/part.svg>
+					<aside>
+						<p>姓名 : 秦珈嚴<br>
+						系級 : 資管三甲<br>
+						分工 : 網頁後端資料庫處理<p>
+						<br>
+						</p>
+					</aside>
+				</article>
+				<hr>
+				<section>
+					<aside>
+						<p>姓名 : 劉<br>
+						系級 : 資管二乙<br>
+						分工 : 網頁後端資料庫處理<p>
+						<br>
+						</p>
+					</aside>
+					<img class=portrait src=assert/svg/part.svg>
+				</section>
+				<hr>
+			</div>
+		</main>
+	</body>
+</html>

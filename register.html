@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>member</title><style>
+		@import url(assert/css/common.css);
+		@import url(assert/css/member.css);
+		fieldset{
+			width: 290px;
+			line-height: 45px;
+			margin: 80px auto;
+			border-radius: 10px;
+		}
+		textarea{
+			border-radius: 10px;
+    		line-height: 20px;
+    		transition: 0.5s;
+		}
+		textarea:hover{
+			box-shadow: 0 0 5px #77aae7;
+		}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form>
+				<fieldset>
+					<legend><img src=assert/svg/register.svg style="width: 70px"></legend>
+					帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號 : <input class=text type="text" name=acc><br>
+					密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼 : <input class=text type="password" name=pass><br>
+					確認密碼 : <input class=text type="password" name=passs><br>
+					姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : <input type="text" class=text ame=name><br>
+					生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日 : <input type="date" class=text name=birth><br>
+					性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;別 : <input type="radio" name=sex value=man> 男 <input type="radio" name=sex value="female"> 女<br>
+					電&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;話 : <input type="text" class=text name=account><br>
+					電子郵件 : <input type="mail" class=text name=mail><br>
+					地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 : <textarea cols=21 name=locate style="position: relative;top:20px;" ></textarea><p>
+					<input class=but type=reset style="font-size: 18px;
+					padding: 5px 10px;" value=重新輸入>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class=but type=submit style="font-size: 18px;
+					padding: 5px 10px;" value=送出>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

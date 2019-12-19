@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品資訊</title>
+		<style type="text/css" media="screen">
+			@import url(assert/css/common.css);
+			h3{
+				text-align: center;
+			}
+			div.star,article{
+				display: flex;
+				align-items: center;
+				margin:0 auto;
+			}
+			article{
+				justify-content: center;}
+			section{
+				margin:20px 50px;
+				line-height: 50px;
+			}
+			div.star img{
+				width: 25px;
+			}
+			div.command{
+				width: 400px;
+				margin:0 auto;
+			}
+			h5{
+				font-size: 21px;
+				font-family: 標楷體;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h3>商品細節</h3>
+			<article>
+				<section>
+					<img src=assert/img/product/01.jpg>
+				</section>
+				<section>
+					<span><b>商品名稱 : </b></span><br>
+					<span><b>商品簡介 : </b></span><br>
+					<span><b>付款方式 : </b>ATM付款 / 貨到付款 / 信用卡</span><br>
+					<span><b>交貨方式: </b>7-11、OK、萊爾富、全家取貨、<br>一般宅配</span><br>
+					<span><b>單價 : </b><span id=price class=price>20</span></span><br>
+					<form>
+						<span><b>數量 <input type=number name=set id=amount value="1" min=1 max=10 onchange="prices(this)"></b></span>&nbsp;&nbsp;&nbsp;庫存<span id=stock>50</span><br>
+						<span><b>總價 : </b><span id=prices class=prices></span></span><br>
+						<input type=submit class=but value=加入購物車>
+					</form>
+				</section>
+			</article>
+			<aside>
+				<hr>
+				<h3>商品評論</h3>
+				<div class="command">
+					No.1
+					<h5>名稱 : 科有宜</h5>
+					<div class="star">
+						<img src=assert/img/star.png> 
+						<img src=assert/img/star.png> 
+						<img src=assert/img/star.png> 
+						<img src=assert/img/star.png> 
+					</div>
+					<p>評論 : 好吃又便宜ㄚㄚㄚㄚ1fs2fsff</p>
+					<p>時間 : 12/12</p>
+				</div>
+			</aside>
+		</main>
+		<script type="text/javascript">
+			function prices(a){
+			document.getElementById("prices").innerHTML=parseInt(document.getElementById("price").innerHTML)*a.value;}
+		</script>
+	</body>
+</html>

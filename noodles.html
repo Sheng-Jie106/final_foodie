@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>流行泡麵</title>
+		<script src=assert/js/theme.js></script>
+		<style>
+		@import url(assert/css/common.css);
+		@import url(assert/css/theme.css);
+			.noodles h3{text-align: center;}
+			div.out{
+				display: flex;
+				justify-content: center;
+			}
+			div.out div{
+    			margin: 0 50px;
+			}
+			img{
+				margin:20px auto;
+				width: 300px;
+				height:300px;
+			}
+		</style>
+	</head>
+	<body>
+		<main class=noodles>
+			<h3>流行泡麵</h3>
+			<div class="out">
+				<div>
+					<a href=noodle_1.html target="main">
+						<figcaption>
+							<img src=assert/img/nod1.png onmouseover="shake(this);" onmouseout="stop_shake()">
+							<figure>乾麵</figure>
+						</figcaption>
+					</a>
+				</div>
+				<div>
+					<a href=noodle_2.html target="main">
+						<figcaption>
+							<img src=assert/img/nod2.png onmouseover="shake(this);" onmouseout="stop_shake()">
+							<figure>湯麵</figure>
+						</figcaption>
+					</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

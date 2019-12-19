@@ -5,13 +5,17 @@ font-family: 微軟正黑體;
 a{
 text-decoration: none;
 }
+main{
+	width: 1260px;
+	margin: 0 auto;
+}
 hr{
 width: 80%;
 height: 4px;
 border: 0;
 background-image: linear-gradient(to right,#ff7e04,red,#ff450d);
 }
-input.but{
+input.but,input.s,input.n{
 padding: 5px 10px;
 font-size: 20px;
 margin: 0 auto;
@@ -20,19 +24,19 @@ background: #ff9a43;
 border-radius: 5px;
 color:white;
 }
-input.but:hover{
+input.but:hover,input.s:hover{
 cursor: pointer;
 background:#df9000;
 }
-input.but:active{
+input.but:active,input.s:active{
 	color: #adadad;
 }
-input.text{
+input.t,input.text{
 border-radius: 5px;
 line-height: 20px;
 transition: 0.5s;
 }
-input.text:hover{
+input.t:hover,input.text:hover{
 box-shadow: 0 0 5px #77aae7;
 }
 h3{font-size: 26px;}

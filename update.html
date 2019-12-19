@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>後臺資料</title>
+		<style type="text/css" media="screen">
+		@import url(assert/css/common.css);
+			table{
+				border-collapse: collapse;
+			}
+			main{
+				text-align: center;
+			}
+			th,td{
+				border:1px solid grey;
+				padding:10px;
+			}
+			form{
+				margin-top:20px;
+			}
+			input.n{
+				background-color: #337ab7;
+    			border-color: #2e6da4;
+			}
+			input.n:hover{
+				cursor: pointer;
+				background-color: #286090;
+    			border-color: #204d74;
+			}
+			input.n,input.s{
+				margin:15px;
+			}
+			input.n:active{
+				color:grey;
+			}
+			input.t{
+				line-height: 25px;
+    			font-size: 17px;
+    			padding-left: 10px;
+    			border-style: ridge;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<form method="get">
+				<table>
+					<tr>
+						<th>商品名稱</th>
+						<th>商品圖片</th>
+						<th>商品簡介</th>
+						<th>商品價格</th>
+						<th>商品庫存</th>
+					</tr>
+					<tr>
+						<td><input class=t type=text name= value=卡迪那></td>
+						<td><input class=t type=text name= value=assert/img/product/1.jpg></td>
+						<td><input class=t type=text name= value=好吃></td>
+						<td><input class=t type=text name= value=20></td>
+						<td><input class=t type=text name= value=20></td>
+					</tr>
+				</table>
+				<input class=s type=submit value=更新> <input class=n type=button value=新增> 
+			</form>
+		</main>
+	</body>
+</html>

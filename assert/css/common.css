@@ -15,19 +15,20 @@ input.but{
 padding: 5px 10px;
 font-size: 20px;
 margin: 0 auto;
-border: 2px outset wheat;
+border-style:none;
 background: #ff9a43;
-border-radius: 10px;
+border-radius: 5px;
+color:white;
 }
 input.but:hover{
 cursor: pointer;
-color:red
+background:#df9000;
 }
 input.but:active{
-	background-color:yellow;
+	color: #adadad;
 }
 input.text{
-border-radius: 10px;
+border-radius: 5px;
 line-height: 20px;
 transition: 0.5s;
 }

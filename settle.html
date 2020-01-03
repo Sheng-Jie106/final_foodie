@@ -7,8 +7,9 @@
 		@import url(assert/css/common.css);
 			div.list{
 				display: flex;
-				background-color:  #d8d8d8;
-    			color: #a54545;
+				font-weight: bold;
+				background-color: #ffdcca;
+    			color: #ff5200;
 				margin:20px auto;
 			}
 			div.cart{
@@ -25,6 +26,9 @@
     			text-align: center;
 			}
 			div.product{
+				color:#ff9800;
+				font-size: 24px;
+				font-weight: bold;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -68,9 +72,9 @@
 				</div>
 				<div class="product">
 					<span>1</span>
-					<span><img src=assert/img/product/01.jpg></span>
+					<span style="margin-right:-35px"><img src=assert/img/product/01.jpg></span>
 					<span>卡迪那</span>
-					<span id=amount>2</span>
+					<span style="margin-right:-5px" id=amount>2</span>
 					<span id=price>30</span>
 					<span id=prices>60</span>
 				</div>
@@ -85,7 +89,7 @@
 					<option value="">信用卡 </option>
 				</select><br>
 				郵寄地址 : <br>
-				<textarea cols=50 rows=3 name=location></textarea>
+				<textarea cols=50 rows=3 name=location placeholder="桃園是中壢區中北路200號"></textarea>
 				<div style="text-align: center;"><input class=but type=submit value=確認付款></div>
 			</div>
 		</main>

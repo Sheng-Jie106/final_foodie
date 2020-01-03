@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>留言區</title>
+		<style type="text/css" media="screen">
+			@import url(assert/css/common.css);
+			form{
+				margin: 0 auto;
+    			width: 200px;
+			}
+			textarea{
+				border-radius: 5px;
+			    line-height: 25px;
+			    transition: 0.5s;
+			}
+			textarea:hover{
+				box-shadow: 0 0 5px #77aae7;
+			}
+			table{margin: 40px auto}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td rowspan="3"><img style="width: 200px" src=assert/img/product/01.jpg></td>
+				<td>商品名稱 : 卡迪娜</td>
+			</tr>
+			<tr>
+				<td>商品介紹 : 好吃的哦</td>
+			</tr>
+			<tr>
+				<td>商品價格 : 20</td>
+			</tr>
+		</table>
+		<hr style='width: 80%'>
+		<form method="post" action name=com>
+			<div><span>評價 : </span>
+			<select name="star" required style="height: 30px">
+				<option value="5">五顆星</option>
+				<option value="4">四顆星</option>
+				<option value="3">三顆星</option>
+				<option value="2">二顆星</option>
+				<option value="1">一顆星</option>
+			</select></div><br>
+			<span style="position: relative;bottom: 10px">留言 : </span>
+			<div style="text-align: center;">
+			<textarea cols="35" rows="6" placeholder="說點什麼吧" name=con></textarea>
+			<input style="margin:15px;" class=but type=button onclick='co()' value=送出></div>
+		</form>
+		<script type="text/javascript">
+		function co(){
+			if(com.con.value.length<5)
+				alert("評論須超過5個字");
+			else if(com.con.value.length>100)
+				alert("評論不可超過100個字");
+			else
+				com.submit();
+		}
+		</script>
+	</body>
+</html>

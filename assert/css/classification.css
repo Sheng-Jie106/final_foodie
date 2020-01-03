@@ -10,31 +10,28 @@ margin:1.33em 100px;
 .noodle_1 h3,.noodle_2 h3{
 text-align: center;
 }
-figcaption:hover{
-box-shadow: 0 0 10px grey;
-}
 figcaption:hover img{
 height:280px;
 opacity:1;
 }
+figcaption:hover{box-shadow: 0 0 5px gray}
 figcaption:hover figure{
-background-color: orange;
+background-color: #ff6d0d;
 border-radius: 10px;
 color:white;
 margin:0;
 }
 figcaption{
 	border-radius: 10px;
-	box-shadow: 0 0 1px;
 	margin:0 10px;
 }
 figure{
 text-align: center;
 transition: 0.5s;
-background: #ffb613;
-    color: #ffffff;
-    border-radius: 10px;
+color:black;
+border-radius: 10px;
 }
+figure p{padding:5px;}
 table{
 margin: 20px auto;
 }
@@ -42,6 +39,7 @@ div.page{
 	text-align: center;
 }
 span.btn{
+	border-radius: 5px;
 	margin: 10px;
     padding: 5px 15px;
     background-color: orange;

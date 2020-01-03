@@ -22,7 +22,7 @@ flex:auto;
 }
 ul.navbar a {
 background-color: #fff;
-font-size: 18px;
+font-size: 21px;
 color: #333;
 display: block;
 padding: 0 30px;
@@ -31,7 +31,7 @@ line-height: 40px;
 transition-duration: 0.5s;
 }
 ul.navbar a:hover {
-background-color: #ef5c28;
+background-color: #ff6d0d;
 color: #fff;
 }
 ul.navbar li:hover > a { 

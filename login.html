@@ -17,11 +17,11 @@
 			fieldset{	
 				width: 330px;		
 			    margin: 0 auto;
-			    padding: 30px;
+			    padding: 30px 30px 60px;
 				border-radius: 10px;
     			line-height: 69px;
 			}
-			div.login div{margin: 20px 0;}
+			div.login div{margin: 20px 0 -20px;}
 		</style>
 	</head>
 	<body>
@@ -29,10 +29,10 @@
 			<div class=login><form>
 				<fieldset>
 					<legend><img src=assert/svg/part.svg style="width: 70px"></legend>
-					帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號 : <input type="text" name=acc class=text ><br>
-					密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼 : <input type="password" name=pass class=text ><br>
-				</fieldset>
+					<span class=111>帳號 :</span> <input type="text" name=acc class=text ><br>
+					<span class=111>密碼 :</span> <input type="password" name=pass class=text ><br>
 				<div><input class=but type=button value=忘記密碼>&nbsp;&nbsp;<input class=but type=button value=登入></div>
+				</fieldset>
 			</form></div>
 		</main>
 	</body>	

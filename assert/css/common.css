@@ -11,7 +11,7 @@ main{
 }
 hr{
 width: 80%;
-height: 4px;
+height: 2px;
 border: 0;
 background-image: linear-gradient(to right,#ff7e04,red,#ff450d);
 }
@@ -33,10 +33,15 @@ input.but:active,input.s:active{
 }
 input.t,input.text{
 border-radius: 5px;
-line-height: 20px;
+line-height: 25px;
 transition: 0.5s;
 }
 input.t:hover,input.text:hover{
 box-shadow: 0 0 5px #77aae7;
 }
-h3{font-size: 26px;}
+h3{
+	font-size: 32px;
+	color: #e29300;
+    text-shadow: 1px 1px 0px #ff0000;
+}
+span.111{font:size:25px}
